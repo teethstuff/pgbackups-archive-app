@@ -1,5 +1,9 @@
 require "pg"
+require "pgbackups-archive"
 require "securerandom"
+
+spec = Gem::Specification.find_by_name "pgbackups-archive"
+load "#{spec.gem_dir}/lib/tasks/pgbackups_archive.rake"
 
 task :generate_database do
 
