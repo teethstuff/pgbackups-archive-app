@@ -1,14 +1,11 @@
-# pgbackups-archive-dummy
+# pgbackups-archive-app
 
-A test harness for [pgbackups-archive](http://github.com/kjohnston/pgbackups-archive) - a means of automating Heroku's pgbackups and archiving them to Amazon S3 via the `fog` gem.
-
-This repository contains Rake tasks for building a dummy database on Heroku and profiling resource utilization during backup processes via New Relic to aid in the development of the `pgbackups-archive` gem.
+A deployable heroku application for running pgbackups using [pgbackups-archive](http://github.com/kjohnston/pgbackups-archive) - a means of automating Heroku's pgbackups and archiving them to Amazon S3 via the `fog` gem.
 
 ## Use
 
 * Fork this repo and create a Heroku app to push it to.
 * Follow the [pgbackups-archive](http://github.com/kjohnston/pgbackups-archive) setup instructions.
-* Use the `heroku run rake db:generate` rake task to generate a dummy database.
 * Use the `heroku run rake pgbackups:archive` rake task to perform a backup of the dummy database.
 
 ## Contributing
