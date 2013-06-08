@@ -4,9 +4,8 @@ A deployable heroku application for running pgbackups using [pgbackups-archive](
 
 ## Use
 
-* Fork this repo and create a Heroku app to push it to.
+* Clone this repo and create a Heroku app to push it to.
 * Follow the [pgbackups-archive](http://github.com/kjohnston/pgbackups-archive) setup instructions.
-* Use the `heroku run rake pgbackups:archive` rake task to perform a backup of the dummy database.
 
 ## Contributing
 
@@ -14,7 +13,7 @@ A deployable heroku application for running pgbackups using [pgbackups-archive](
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
-5. [Create a Pull Request](https://github.com/kjohnston/pgbackups-archive-dummy/pull/new)
+5. [Create a Pull Request](https://github.com/kbaum/pgbackups-archive-app/pull/new)
 
 ## License
 
