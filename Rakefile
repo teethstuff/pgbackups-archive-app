@@ -21,5 +21,5 @@ namespace :pgbackups do
 
 end
 
-NewRelic::Agent.manual_start app_name: "pgbackups-archive-dummy",
+NewRelic::Agent.manual_start app_name: "pgbackups-archive",
   transaction_tracer: { transaction_threshold: 1.5 }
